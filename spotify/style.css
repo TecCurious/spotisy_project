@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+
+}
+
+nav ul li {
+    padding: 14px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+}
+
+.brand img {
+    width: 45px;
+    padding: 0 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2.3rem;
+}
+
+.container {
+    /* min-height: 72vh; */
+    background-color: black;
+    color: white;
+    margin: 23px auto;
+    width: 75%;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url('background.png');
+    min-height: calc(72vh - 60px - 100px);
+}
+
+.songitem-container{
+    margin-top: 50px;
+    width: 40vw;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    /* width: 50%; */
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+border-radius: 35px;
+}
+    
+
+.songItem img{
+width: 42px;
+margin: 0 20px;
+border-radius: 34px;
+} 
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+
+.bottom {
+    display: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+
+
+
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.icons {
+    padding: 10px 0;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#pro {
+    width: 80vw;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: rgb(58, 236, 108);
+height: 100%;
+    }
+    .songName{
+        font-size: 12px;
+    }
+    .timestamp{
+        display: flex;
+        flex-direction: column;
+    }
+    .songInfo{
+       display: flex;
+       flex-direction: column;
+       font-weight: bolder;
+       font-size: 7px;
+    }
+    /* #mastersongName{
+        height: 4px;
+        width: 2px;
+        overflow:;
+    } */
+    .icons{
+        height: fit-content;
+    }
+    h1{
+        color: rgb(246, 68, 136);
+    }
+    .songitem-container{
+        width: 70vw;
+}
+.songItem{
+width: 95%;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+}
+}
+  
